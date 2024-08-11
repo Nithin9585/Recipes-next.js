@@ -22,7 +22,7 @@ export default function RecipeDetailsItem({ getrDetails }) {
                         />
                     </div>
                     <div>
-                        <h2 className="text-3xl font-extrabold text-gray-950">{getrDetails?.name}</h2>
+                        <h2 className="text-3xl font-extrabold text-purple-500">{getrDetails?.name}</h2>
                     </div>
                     <div className="gap-4 mt-5">
                         <p className="text-2xl text-gray-700">{getrDetails?.mealType[0]}</p>
@@ -37,10 +37,13 @@ export default function RecipeDetailsItem({ getrDetails }) {
                                 <li key={index}>{i}</li>
                             ))}
                         </ul>
-                    </div>
-                    <div className="gap-4 mt-5 border border-black p-3 rounded rounded-sm text-white-800 bg-gray-500">
+                        <div className="gap-4 mt-5 border border-black p-3 rounded rounded-sm text-white-800 bg-gray-500">
+                        <h3 className="text-lg font-bold text-gray-700">Instructions</h3>
+
                         <p className="text-xl text-gray-700">{getrDetails?.instructions}</p>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
