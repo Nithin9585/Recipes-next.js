@@ -40,7 +40,7 @@ export default function RecipesList({ recipeList }) {
           {filteredRecipes && filteredRecipes.length > 0 ? (
             filteredRecipes.map((r) => (
               <Link key={r.id} href={`/recipe-list/${r.id}`}>
-                <Card className="relative border-none group transition duration-300 ease-in-out shadow-md cursor-pointer hover:shadow-lg hover:shadow-purple-800">
+                <Card className="relative border-none group transition duration-300 ease-in-out  cursor-pointer  hover:shadow-purple-800">
                   <CardContent className="bg-gray rounded-md overflow-hidden">
                     <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
                       <img

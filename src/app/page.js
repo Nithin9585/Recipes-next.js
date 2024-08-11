@@ -2,21 +2,14 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="relative h-screen">
-    <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/Cream Illustrative Healthy Food Recipes YouTube Intro Video.mp4" autoPlay loop muted />
-
-<div className="absolute inset-0 flex items-center justify-center h-screen w-full text-white">
-  <Link
-    href="/recipe-list"
-    className="text-white bg-orange-900 hover:bg-red-700 font-bold py-2 px-4 rounded" 
-  >
-    Explore Recipes
-  </Link>
-</div>
-
-
+    <div className="absolute inset-0 flex flex-col items-center justify-center h-screen w-full bg-gray-900 text-white p-4">
+      <h1 className="text-3xl font-bold mb-4">Find Famous Dishes Around the World</h1>
+      <Link
+        href="/recipe-list"
+        className="text-white mt-10 bg-gray-800 border border-purple-500 hover:bg-gray-700 font-bold py-2 px-4 rounded transition-colors"
+      >
+        Explore Recipes
+      </Link>
     </div>
   );
 }
